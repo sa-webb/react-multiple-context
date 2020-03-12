@@ -1,16 +1,20 @@
 import React from 'react';
 import Header from './components/Header';
 import AnyContext from './AnyContext';
-import Basic from './components/Basic';
-//import LearnReact from './components/LearnReact';
+import AnotherContext from './AnotherContext';
+import FirstExample from './components/First';
+import SecondExample from './components/Second';
 
 const App = () => {
   return (
     <>
       <Header />
-      <AnyContext.Provider value="error">
-        <Basic />
+      <AnyContext.Provider value="primary">
+        <FirstExample />
       </AnyContext.Provider>
+      <AnotherContext.Provider value="secondary">
+        <SecondExample />
+      </AnotherContext.Provider>
     </>
   );
 };
