@@ -29,9 +29,9 @@ export default function Header() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Context
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Example</Button>
         </Toolbar>
       </AppBar>
     </div>
